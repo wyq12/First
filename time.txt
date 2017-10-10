@@ -2,3 +2,34 @@
 第二回：岁月如梭
 第三回：时间如白驹过隙
 第四回：光阴潺潺如流水
+
+
+本地仓库
+  1.进入git.bash
+  2.mkdir  创建一个目录
+  3.通过cd 切换到该目录
+  4.进行仓库的初始化  git init
+  5.在改目录中创建工作区文件  time.txt
+  6.将工作区的文件添加到缓冲区  git add time.txt
+  7.配置用户信息 
+      git config --global user.name ""
+      git config --global user.email ""
+  8.将缓存区文件提交到仓库中
+      git commit -m "提交的标识"
+  9.查看提交的状态  git status
+  10.查看提交的信息 git log
+  11.进行删除  对还未添加到缓冲区的文件  git checkout time.txt
+  12.文件回滚  git reset --hard commit (通过git log 查看每个提交的commit（类似ID），可以将整个commit写上，也可只写开头的六个)
+  13.git reflog 查看历史命令
+  14.创建并且切换分支   git checkout -b 分支名
+  15.在分支上进行的操作，是不会影响到master上的
+  16.在分支上操作要将文件提交到本地仓库，将文件提交到本地仓库中需两个步骤：
+        1.git add 文件名
+        2.git commit -m "提交标识"
+  17.进行汇总  进行合并   git merge 分指明
+  18.查看分支  git branch
+  19.删除分支  git checkout -d 要删除的分支名
+  20.切换分支  git checkout  分支名
+
+
+
